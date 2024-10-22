@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri
-BuildDirectory: /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/build
+SourceDirectory: /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++
+BuildDirectory: /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri"
+ConfigureCommand: "/usr/bin/cmake" "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: /usr/bin/git
+GITCommand: 
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,9 +58,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /usr/bin/git
+UpdateCommand: 
 UpdateOptions: 
-UpdateType: git
+UpdateType: 
 
 # Compiler info
 Compiler: /usr/bin/c++

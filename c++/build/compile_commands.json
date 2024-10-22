@@ -1,8 +1,8 @@
 [
 {
-  "directory": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/ThisNow.dir/main.cpp.o -c /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/main.cpp",
-  "file": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/main.cpp",
-  "output": "CMakeFiles/ThisNow.dir/main.cpp.o"
+  "directory": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/cplusplus.dir/binone.cpp.o -c /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/binone.cpp",
+  "file": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/binone.cpp",
+  "output": "CMakeFiles/cplusplus.dir/binone.cpp.o"
 }
 ]

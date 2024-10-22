@@ -55,7 +55,7 @@
 					[
 						0
 					],
-					"name" : "ThisNow",
+					"name" : "cplusplus",
 					"targetIndexes" : 
 					[
 						0,
@@ -290,9 +290,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "ThisNow::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ThisNow-Debug-9a29c7c7c34a0ed9bb0e.json",
-					"name" : "ThisNow",
+					"id" : "cplusplus::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cplusplus-Debug-79273e576701de0b32e0.json",
+					"name" : "cplusplus",
 					"projectIndex" : 0
 				}
 			]
@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/build",
-		"source" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri"
+		"build" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/build",
+		"source" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++"
 	},
 	"version" : 
 	{

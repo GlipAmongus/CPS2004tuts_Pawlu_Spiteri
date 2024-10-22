@@ -150,8 +150,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/build",
-		"source" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri"
+		"build" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/build",
+		"source" : "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++"
 	},
 	"version" : 
 	{

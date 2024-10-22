@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.5.0)
-project(ThisNow VERSION 0.1.0 LANGUAGES C CXX)
+project(cplusplus VERSION 0.1.0 LANGUAGES C CXX)
 
-add_executable(ThisNow main.cpp)
+add_executable(cplusplus binone.cpp)
 
 include(CTest)
 enable_testing()
-
