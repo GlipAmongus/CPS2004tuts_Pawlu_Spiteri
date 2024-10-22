@@ -4,17 +4,23 @@
 // #include "binops.h"
 using namespace std;
 
-int main(int argc, char *argv[]){
+struct Tuple {
+    float opnd1;
+    char op;
+    float opnd2;
+};
 
-    // int carrots;
-    // cout << "Give me carrots!" << endl;
-    // cin >> carrots;
-    // cout << "Gonna eat all your " << carrots << " carrots!" << endl;
+int main(){
+    Tuple* tups = new Tuple[3];  
 
-    printf("You have entered %d arguments:\n", argc);
-
-    for (int i = 0; i < argc; i++) {
-        printf("%s\n", argv[i]);
+    for(int i = 1; i <= 3; i++){
+        cout << "Give me expression "<< i <<"!:" << endl;
+        cin >> tups[i].opnd1 >> tups[i].op >> tups[i].opnd2;
+        // Implement exception handling for incorrect types
     }
+    for(int i = 1; i <= 3; i++){
+        cout << tups[i].opnd1 <<" "<< tups[i].op <<" "<< tups[i].opnd2 << endl;
+    }
+
     return 0;
 } 
