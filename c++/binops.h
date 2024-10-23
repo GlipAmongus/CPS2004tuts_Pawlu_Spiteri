@@ -23,7 +23,35 @@ class Tuple {
         
         ~Tuple(){}
         
-        void evaluation(Tuple* tuparr);
+        // Getter and Setter for operand 1
+        float getOpnd1() const { return opnd1; }
+        void setOpnd1(float operand1) { opnd1 = operand1; }
+
+        // Getter and Setter for operand 2
+        float getOpnd2() const { return opnd2; }
+        void setOpnd2(float operand2) { opnd2 = operand2; }
+
+        // Getter and Setter for opcode
+        char getOp() const { return op; }
+        void setOp(char opcode) { op = opcode; }
+
+        //eval for any tuple
+        float evaluation () const{
+            switch(op){
+                case '+':
+                    return opnd1 + opnd2;
+                case '-':
+                    return opnd1 - opnd2;
+                case '*':
+                    return opnd1 * opnd2;
+                case '/':
+                    if(opnd2 != 0) {
+                        return opnd1 + opnd2;
+                    } else {
+                        throw runtime_error("Division by zero.");
+                    }
+            }
+        }
 };
 
 
