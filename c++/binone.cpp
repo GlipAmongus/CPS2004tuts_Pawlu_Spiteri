@@ -1,22 +1,15 @@
 
 #include <iostream>
- 
-// #include "binops.h"
+#include "binops.h"
 using namespace std;
-
-struct Tuple {
-    float opnd1;
-    char op;
-    float opnd2;
-};
 
 int main(){
     //Fixed array on the heap
-    Tuple* tups = new Tuple[3];  
+    Tuple* tups = new Tuple[FIXED];  
 
     //Read from console (operand1 op operand2)
-    for(int i = 1; i <= 3; i++){
-        cout << "Give me expression "<< i <<"!:" << endl;
+    for(int i = 0; i < 3; i++){
+        cout << "Give me expression "<< i+1 <<"!:" << endl;
         cin >> tups[i].opnd1 >> tups[i].op >> tups[i].opnd2;
 
         try{
@@ -51,9 +44,11 @@ int main(){
         }
     }
 
-    for(int i = 1; i <= 3; i++){
+    for(int i = 0; i < 3; i++){
         cout << tups[i].opnd1 <<" "<< tups[i].op <<" "<< tups[i].opnd2 << endl;
     }
+
+    evaluation(tups);
 
     return 0;
 } 
