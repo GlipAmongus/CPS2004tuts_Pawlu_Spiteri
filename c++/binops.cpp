@@ -1,6 +1,11 @@
+#include <iostream>
+#include <fstream>
 #include "binops.h"
+using namespace std;
 
-void Binops::evaluation (Tuple* tuparr) {
+ofstream fout("evals.txt"); 
+
+void Tuple::evaluation (Tuple* tuparr) {
     int i = 0;
     float eval;
     for(int i = 0; i < FIXED; i++) {
@@ -23,7 +28,6 @@ void Binops::evaluation (Tuple* tuparr) {
                 break;
         }
 
-        fout << tuparr[i].opnd1 <<" "<< tuparr[i].op <<" "<< tuparr[i].opnd2 << " -> " << eval << endl;;
-
+        fout << tuparr[i].opnd1 <<" "<< tuparr[i].op <<" "<< tuparr[i].opnd2 << " -> " << eval << endl;
     }
 }

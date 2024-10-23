@@ -127,17 +127,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cplusplus
+# Target rules for targets named main
 
 # Build rule for target.
-cplusplus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cplusplus
-.PHONY : cplusplus
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-cplusplus/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/build
-.PHONY : cplusplus/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named Experimental
@@ -503,29 +503,29 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-binone.o: binone.cpp.o
-.PHONY : binone.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-binone.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/binone.cpp.o
-.PHONY : binone.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-binone.i: binone.cpp.i
-.PHONY : binone.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-binone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/binone.cpp.i
-.PHONY : binone.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-binone.s: binone.cpp.s
-.PHONY : binone.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-binone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cplusplus.dir/build.make CMakeFiles/cplusplus.dir/binone.cpp.s
-.PHONY : binone.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -564,10 +564,10 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... cplusplus"
-	@echo "... binone.o"
-	@echo "... binone.i"
-	@echo "... binone.s"
+	@echo "... main"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

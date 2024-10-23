@@ -290,9 +290,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "cplusplus::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cplusplus-Debug-79273e576701de0b32e0.json",
-					"name" : "cplusplus",
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-19b5de53e7aaa2ef28f9.json",
+					"name" : "main",
 					"projectIndex" : 0
 				}
 			]
