@@ -44,10 +44,6 @@ int main(){
         }
     }
 
-    for(int i = 0; i < 3; i++){
-        cout << tups[i].opnd1 <<" "<< tups[i].op <<" "<< tups[i].opnd2 << endl;
-    }
-
     evaluation(tups);
 
     return 0;

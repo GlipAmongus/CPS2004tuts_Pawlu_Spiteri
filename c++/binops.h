@@ -5,6 +5,7 @@
 #define MYCLASS_H
 
 #include <iostream>
+#include <fstream>
 #include "binops.h"
 using namespace std;
 
@@ -16,9 +17,11 @@ struct Tuple {
     float opnd2;
 };
 
+ofstream fout("evals.txt");
+
 void evaluation (Tuple* tuparr) {
     int i = 0;
-    int eval;
+    float eval;
     for(int i = 0; i < FIXED; i++) {
         eval = 0;
         switch (tuparr[i].op) {
@@ -35,9 +38,12 @@ void evaluation (Tuple* tuparr) {
                 eval = tuparr[i].opnd1 * tuparr[i].opnd2;
                 break;
         }
-        cout << eval << endl;
+
+        fout << tuparr[i].opnd1 <<" "<< tuparr[i].op <<" "<< tuparr[i].opnd2 << " -> " << eval << endl;;
+
     }
 }
+
 
 
 // class MyClass {
