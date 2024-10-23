@@ -17,32 +17,19 @@ struct Tuple {
     float opnd2;
 };
 
+class tuple {
+    private:
+        float opnd1;
+        float opnd2;    
+        char op;
+    public:
+        // getters and setters here
+        void evaluation(Tuple* tuparr);
+};
+
 ofstream fout("evals.txt");
 
-void evaluation (Tuple* tuparr) {
-    int i = 0;
-    float eval;
-    for(int i = 0; i < FIXED; i++) {
-        eval = 0;
-        switch (tuparr[i].op) {
-            case '+':
-                eval = tuparr[i].opnd1 + tuparr[i].opnd2;
-                break;
-            case '-':
-                eval = tuparr[i].opnd1 - tuparr[i].opnd2;
-                break;
-            case '/':
-                eval = tuparr[i].opnd1 / tuparr[i].opnd2;
-                break;
-            case '*':
-                eval = tuparr[i].opnd1 * tuparr[i].opnd2;
-                break;
-        }
 
-        fout << tuparr[i].opnd1 <<" "<< tuparr[i].op <<" "<< tuparr[i].opnd2 << " -> " << eval << endl;;
-
-    }
-}
 
 
 
