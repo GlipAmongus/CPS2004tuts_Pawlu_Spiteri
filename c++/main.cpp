@@ -3,15 +3,23 @@
 #include "binops.h"
 using namespace std;
 
+struct temp{
+    float topnd1;
+    float topnd2;
+    char top;
+};
+
 int main(){
     //Fixed array on the heap
-    Tuple* tups = new Tuple[FIXED];  
+    ofstream fout("evals.txt", ios_base::out | ios_base::trunc);
+
+    Tuple *tups = new Tuple[FIXED];  
+    temp temp_exp;
 
     //Read from console (operand1 op operand2)
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < FIXED; i++){
         cout << "Give me expression "<< i+1 <<"!:" << endl;
-        cin >> tups[i].opnd1 >> tups[i].op >> tups[i].opnd2;
-
+        cin >> temp_exp.topnd1 >> temp_exp.top >> temp_exp.topnd2;
         try{
             if(cin.fail()){
                 cin.clear();
@@ -19,7 +27,7 @@ int main(){
                 throw "Fail1: incorrect types";
             }
 
-            switch(tups[i].op){
+            switch(temp_exp.top){
                 case '+':
                     cout << "valid" << endl;
                     break;
@@ -42,9 +50,12 @@ int main(){
                 i--;
                 continue;
         }
-    }
 
-    evaluation(tups);
+        tups[i].setOp(temp_exp.top);
+        tups[i].setOpnd1(temp_exp.topnd1);
+        tups[i].setOpnd2(temp_exp.topnd2);
+        tups[i].evaluation();
+    }
 
     return 0;
 } 

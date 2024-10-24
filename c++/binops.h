@@ -9,13 +9,16 @@
 #include "binops.h"
 using namespace std;
 
-#define FIXED 3
+#define FIXED 4
 
 class Tuple {
     private:
         float opnd1;
         float opnd2;    
         char op;
+
+        //write to file
+        void writetofile (float eval) ;
     public:
         // getters and setters here
         Tuple(float operand1 = 0.0, float operand2 = 0.0, char opcode = 0)
@@ -36,22 +39,7 @@ class Tuple {
         void setOp(char opcode) { op = opcode; }
 
         //eval for any tuple
-        float evaluation () const{
-            switch(op){
-                case '+':
-                    return opnd1 + opnd2;
-                case '-':
-                    return opnd1 - opnd2;
-                case '*':
-                    return opnd1 * opnd2;
-                case '/':
-                    if(opnd2 != 0) {
-                        return opnd1 + opnd2;
-                    } else {
-                        throw runtime_error("Division by zero.");
-                    }
-            }
-        }
+        void evaluation () ;
 };
 
 
