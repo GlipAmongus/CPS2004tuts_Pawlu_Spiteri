@@ -503,6 +503,30 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
+binops.o: binops.cpp.o
+.PHONY : binops.o
+
+# target to build an object file
+binops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/binops.cpp.o
+.PHONY : binops.cpp.o
+
+binops.i: binops.cpp.i
+.PHONY : binops.i
+
+# target to preprocess a source file
+binops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/binops.cpp.i
+.PHONY : binops.cpp.i
+
+binops.s: binops.cpp.s
+.PHONY : binops.s
+
+# target to generate assembly for a file
+binops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/binops.cpp.s
+.PHONY : binops.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -565,6 +589,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... main"
+	@echo "... binops.o"
+	@echo "... binops.i"
+	@echo "... binops.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/binops.cpp" "CMakeFiles/main.dir/binops.cpp.o" "gcc" "CMakeFiles/main.dir/binops.cpp.o.d"
   "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )
 

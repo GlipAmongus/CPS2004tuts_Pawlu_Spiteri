@@ -4,5 +4,11 @@
   "command": "/usr/bin/c++   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/main.cpp",
   "file": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/main.cpp",
   "output": "CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/main.dir/binops.cpp.o -c /home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/binops.cpp",
+  "file": "/home/pawlprips/put_code/CPS2004tuts_Pawlu_Spiteri/c++/binops.cpp",
+  "output": "CMakeFiles/main.dir/binops.cpp.o"
 }
 ]
