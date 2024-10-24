@@ -2,6 +2,7 @@
 #include <fstream>
 #include "binops.h"
 using namespace std;
+ofstream fout("evals.txt", ios_base::out | ios_base::trunc);
 
 void Tuple::evaluation () {
     switch(op){

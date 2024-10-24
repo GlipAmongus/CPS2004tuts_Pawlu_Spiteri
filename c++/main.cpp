@@ -11,8 +11,6 @@ struct temp{
 
 int main(){
     //Fixed array on the heap
-    ofstream fout("evals.txt", ios_base::out | ios_base::trunc);
-
     Tuple *tups = new Tuple[FIXED];  
     temp temp_exp;
 
